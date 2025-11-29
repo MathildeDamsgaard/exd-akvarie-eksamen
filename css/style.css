@@ -79,16 +79,14 @@
 /* ---------------------------------------------------------
    Background styling
 --------------------------------------------------------- */
-.bg {
+
+.bg-img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 870px;
-  margin: 0;
-  background: url(../img/bg.png);
-  background-size: 120vw auto;
-  background-position: center bottom;
+  bottom: 0; /* låser bunden til skærmens bund */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* fylder hele bredden */
+  height: auto; /* proportioner bevares */
   z-index: 0;
 }
 
