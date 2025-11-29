@@ -14,6 +14,15 @@
   position: absolute;
 }
 
+/*Styling af tang*/
+#gameseaweed1 {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 400px;
+}
+
 #game {
   /* lag: først billede (øverst), så gradient (bagved) */
   background-image: url("../img/gamebg.png"),
