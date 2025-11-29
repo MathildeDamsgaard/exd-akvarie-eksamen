@@ -34,6 +34,7 @@
 --------------------------------------------------------- */
 .scene {
   position: relative;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(
@@ -96,7 +97,6 @@
    - vw/vh til placering og ALLE animationsafstande
 --------------------------------------------------------- */
 
-/* Crab: Mathilde */
 .fish1 {
   position: absolute;
   bottom: 10vh;
@@ -118,7 +118,6 @@
   }
 }
 
-/* Nemo: Yulia */
 .fish2 {
   position: absolute;
   bottom: 20vh;
@@ -140,7 +139,6 @@
   }
 }
 
-/* Pufferfish: Mikkeline*/
 .fish3 {
   position: absolute;
   bottom: 35vh;
@@ -162,7 +160,6 @@
   }
 }
 
-/* Shark: Cecilie */
 .fish4 {
   position: absolute;
   bottom: 60vh;
@@ -184,7 +181,6 @@
   }
 }
 
-/* Stingray: Mathilde */
 .fish5 {
   position: absolute;
   bottom: 50vh;
@@ -206,7 +202,6 @@
   }
 }
 
-/* Turtle; Cecilie */
 .fish6 {
   position: absolute;
   bottom: 75vh;
@@ -227,7 +222,7 @@
     transform: translateX(calc(100vw + var(--off-fish6)));
   }
 }
-/* Seaweed: Mathilde */
+
 .fish7 {
   position: absolute;
   bottom: 10vh;
