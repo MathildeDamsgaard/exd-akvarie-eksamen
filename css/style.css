@@ -6,9 +6,6 @@
   --color-water1: #1d5a77;
   --color-water2: #44b9f1;
 
-  /* Billede størrelser (px) */
-  --fish-w: 200px;
-
   /* Start /exit offset (px) */
   --off-fish1: 200px;
   --off-fish2: 200px;
@@ -97,11 +94,12 @@
    - vw/vh til placering og ALLE animationsafstande
 --------------------------------------------------------- */
 
+/* Crab */
 .fish1 {
   position: absolute;
-  bottom: 10vh;
-  width: var(--fish-w);
-  max-width: 10vw;
+  bottom: 3%; /* responsiv størrelse */
+  width: 10%; /* responsiv størrelse */
+  height: auto;
   z-index: 4;
   left: calc(-1 * var(--off-fish1));
   animation: fish1 12s linear infinite;
@@ -118,11 +116,12 @@
   }
 }
 
+/* Nemo */
 .fish2 {
   position: absolute;
-  bottom: 20vh;
-  width: var(--fish-w);
-  max-width: 10vw;
+  bottom: 20%; /* responsiv størrelse */
+  width: 10%; /* responsiv størrelse */
+  height: auto;
   z-index: 3;
   left: calc(-1 * var(--off-fish2));
   animation: fish2 18s linear infinite;
@@ -139,11 +138,12 @@
   }
 }
 
+/* Pufferfish */
 .fish3 {
   position: absolute;
-  bottom: 35vh;
-  width: var(--fish-w);
-  max-width: 10vw;
+  bottom: 35%; /* responsiv størrelse */
+  width: 10%; /* responsiv størrelse */
+  height: auto;
   z-index: 1;
   right: calc(-1 * var(--off-fish3));
   animation: fish3 25s linear infinite;
@@ -160,11 +160,12 @@
   }
 }
 
+/* Shark */
 .fish4 {
   position: absolute;
-  bottom: 60vh;
-  width: calc(var(--fish-w) * 2);
-  max-width: 30vw;
+  bottom: 60%; /* responsiv størrelse */
+  width: 30%; /* responsiv størrelse */
+  height: auto;
   z-index: 3;
   right: calc(-1 * var(--off-fish4));
   animation: fish4 10s linear infinite;
@@ -181,11 +182,12 @@
   }
 }
 
+/* Stingray */
 .fish5 {
   position: absolute;
-  bottom: 50vh;
-  width: calc(var(--fish-w) * 2);
-  max-width: 30vw;
+  bottom: 50%; /* responsiv størrelse */
+  width: 25%; /* responsiv størrelse */
+  height: auto;
   z-index: 3;
   left: calc(-1 * var(--off-fish5));
   animation: fish5 18s linear infinite;
@@ -202,11 +204,12 @@
   }
 }
 
+/* Turtle */
 .fish6 {
   position: absolute;
-  bottom: 75vh;
-  width: var(--fish-w);
-  max-width: max-content;
+  bottom: 75%; /* responsiv størrelse */
+  width: 14%; /* responsiv størrelse */
+  height: auto;
   z-index: 3;
   left: calc(-1 * var(--off-fish6));
   animation: fish6 25s linear infinite;
@@ -222,12 +225,12 @@
     transform: translateX(calc(100vw + var(--off-fish6)));
   }
 }
-
+/* Seaweed */
 .fish7 {
   position: absolute;
-  bottom: 10vh;
-  width: calc(var(--fish-w) * 1.5);
-  max-width: max-content;
+  bottom: 10%; /* responsiv størrelse */
+  width: 16%; /* responsiv størrelse */
+  height: auto;
   z-index: 2;
   left: 48vw; /* fast position indenfor #game */
   animation: none; /* fjernet animation — står stille */
