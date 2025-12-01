@@ -25,16 +25,15 @@
 
 #game {
   /* lag: først billede (øverst), så gradient (bagved) */
-  background-image: url("../img/gamebg.png"),
+  background-image: url("../img/gamebg.svg"),
     linear-gradient(to bottom right, var(--color-water2), var(--color-water1));
   background-position: center center, center center;
   background-repeat: no-repeat, no-repeat;
   background-size: 120vw auto;
   width: 100%;
   min-height: 100vh;
-  margin: 0;
-  overflow-x: hidden;
-  position: relative;
+  overflow-x: hidden; /* Sørger for at krabben ikke kan gå undern baggrunden*/
+  position: relative; /* Sørger for at krabben ikke kan gå undern baggrunden*/
 }
 
 /* fjerner hvide kanter */

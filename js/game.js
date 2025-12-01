@@ -68,7 +68,7 @@ document.addEventListener("keydown", function (e) {
 function moveDodgerUp() {
   const bottomNumbers = dodger.style.bottom.replace("px", "");
   const bottom = parseInt(bottomNumbers);
-  if (bottom < 750) {
+  if (bottom < 710) {
     dodger.style.bottom = `${bottom + 40}px`;
   } else {
     //Gameover

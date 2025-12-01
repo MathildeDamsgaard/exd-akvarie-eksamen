@@ -228,17 +228,15 @@
 /* Seaweed */
 .fish7 {
   position: absolute;
-  bottom: 10%; /* responsiv størrelse */
-  width: 16%; /* responsiv størrelse */
+  bottom: 70px; /* IKKE responsiv størrelse, da den skal være et bestemt sted på havbunden */
+  width: 9%; /* responsiv størrelse */
   height: auto;
   z-index: 2;
-  left: 48vw; /* fast position indenfor #game */
-  animation: none; /* fjernet animation — står stille */
+  left: 48%;
   cursor: pointer;
 }
 
 /* Bubbles */
-
 .bubble {
   position: absolute;
   bottom: -10vh; /* starter under skærmen */
