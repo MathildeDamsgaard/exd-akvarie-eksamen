@@ -44,14 +44,6 @@ body {
   padding: 0;
 }
 
-#start {
-  color: white;
-  font-size: 4rem;
-  position: relative;
-  text-decoration: none;
-  top: 4rem;
-}
-
 #homeBTN {
   position: absolute;
   top: 20px;
