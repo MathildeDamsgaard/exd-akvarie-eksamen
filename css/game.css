@@ -17,23 +17,10 @@
 /*Styling af tang*/
 #gameseaweed1 {
   position: absolute;
-  bottom: 100px;
+  bottom: -1%;
   left: 50%;
   transform: translateX(-50%);
   height: 400px;
-}
-
-#game {
-  /* lag: først billede (øverst), så gradient (bagved) */
-  background-image: url("../img/gamebg.svg"),
-    linear-gradient(to bottom right, var(--color-water2), var(--color-water1));
-  background-position: center center, center center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 120vw auto;
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden; /* Sørger for at krabben ikke kan gå undern baggrunden*/
-  position: relative; /* Sørger for at krabben ikke kan gå undern baggrunden*/
 }
 
 /* fjerner hvide kanter */
@@ -42,16 +29,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-#homeBTN {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 85px;
-  height: 85px;
-  background-size: cover;
-  cursor: pointer;
 }
 
 /*Styling for confetti overlay */
@@ -74,4 +51,48 @@ body {
 .confetti-overlay.confetti-hide img {
   opacity: 0;
   transform: translateY(-8px) scale(1.02);
+}
+
+.spilleknap {
+  display: inline-block; /* Størrelse bestemmes af indhold */
+  margin-top: 1.5rem;
+  padding: 0.6rem 2.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e01b24;
+  border: none;
+  border-radius: 37.46rem;
+  cursor: pointer;
+  text-decoration: none; /* Fjerner den understregede streg */
+  position: fixed; /* Placerer den ift. selve skærmen*/
+  bottom: 0.1%; /* Låser den fast til bunden */
+  left: 2%; /* Låser den fast til venstre */
+  transform: translateX(-50%); /* Centrerer horisontalt */
+  transform: translateY(-50%); /* Centrerer vertikalt */
+}
+
+/* ---------------------------------------------------------
+   Scene styling
+--------------------------------------------------------- */
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-water2),
+    var(--color-water1)
+  );
+}
+
+.bg-img {
+  position: absolute;
+  bottom: 0; /* låser bunden til skærmens bund */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* fylder hele bredden */
+  height: auto; /* proportioner bevares */
+  z-index: 0;
 }
