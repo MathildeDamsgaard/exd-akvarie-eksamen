@@ -8,7 +8,7 @@
 
   /* Start /exit offset (px) */
   --off-fish1: 200px;
-  --off-fish2: 200px;
+  --off-fish2: 300px;
   --off-fish3: 200px;
   --off-fish4: 400px;
   --off-fish5: 400px;
@@ -119,8 +119,8 @@
 /* Nemo */
 .fish2 {
   position: absolute;
-  bottom: 20%; /* responsiv størrelse */
-  width: 10%; /* responsiv størrelse */
+  bottom: 10%; /* responsiv størrelse */
+  width: 30%; /* responsiv størrelse */
   height: auto;
   z-index: 3;
   left: calc(-1 * var(--off-fish2));
@@ -163,8 +163,8 @@
 /* Shark */
 .fish4 {
   position: absolute;
-  bottom: 60%; /* responsiv størrelse */
-  width: 30%; /* responsiv størrelse */
+  bottom: 55%; /* responsiv størrelse */
+  width: 35%; /* responsiv størrelse */
   height: auto;
   z-index: 3;
   right: calc(-1 * var(--off-fish4));
