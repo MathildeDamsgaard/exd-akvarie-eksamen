@@ -10,7 +10,7 @@
   --off-fish1: 200px;
   --off-fish2: 300px;
   --off-fish3: 200px;
-  --off-fish4: 400px;
+  --off-fish4: 500px;
   --off-fish5: 400px;
   --off-fish6: 200px;
   --off-fish7: 200px;
@@ -119,8 +119,8 @@
 /* Nemo */
 .fish2 {
   position: absolute;
-  bottom: 10%; /* responsiv størrelse */
-  width: 30%; /* responsiv størrelse */
+  bottom: 17%; /* responsiv størrelse */
+  width: 10%; /* responsiv størrelse */
   height: auto;
   z-index: 3;
   left: calc(-1 * var(--off-fish2));
@@ -141,7 +141,7 @@
 /* Pufferfish */
 .fish3 {
   position: absolute;
-  bottom: 35%; /* responsiv størrelse */
+  bottom: 32%; /* responsiv størrelse */
   width: 10%; /* responsiv størrelse */
   height: auto;
   z-index: 1;
@@ -163,8 +163,8 @@
 /* Shark */
 .fish4 {
   position: absolute;
-  bottom: 55%; /* responsiv størrelse */
-  width: 35%; /* responsiv størrelse */
+  bottom: 60%; /* responsiv størrelse */
+  width: 28%; /* responsiv størrelse */
   height: auto;
   z-index: 3;
   right: calc(-1 * var(--off-fish4));
@@ -185,7 +185,7 @@
 /* Stingray */
 .fish5 {
   position: absolute;
-  bottom: 50%; /* responsiv størrelse */
+  bottom: 45%; /* responsiv størrelse */
   width: 25%; /* responsiv størrelse */
   height: auto;
   z-index: 3;
@@ -207,8 +207,8 @@
 /* Turtle */
 .fish6 {
   position: absolute;
-  bottom: 75%; /* responsiv størrelse */
-  width: 14%; /* responsiv størrelse */
+  bottom: 78%; /* responsiv størrelse */
+  width: 16%; /* responsiv størrelse */
   height: auto;
   z-index: 3;
   left: calc(-1 * var(--off-fish6));
