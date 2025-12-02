@@ -375,7 +375,7 @@
   padding: 2rem 1.7rem;
   border-radius: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-  text-align: center;
+  text-align: left;
   line-height: 1.4;
 }
 
@@ -391,6 +391,12 @@
   border-radius: 37.46rem;
   cursor: pointer;
   text-decoration: none; /* fjerner den understregede streg */
+}
+
+.popupContent .spilleknap {
+  position: relative; /* Fjerner fixed-position for knappen i popup */
+  margin-top: 1.5rem; /* Justerer mellemrummet mellem knappen og teksten */
+  display: inline-block; /* Gør elementet til et inline-niveaublokelement så margin-top virker*/
 }
 
 .closeBtn {
