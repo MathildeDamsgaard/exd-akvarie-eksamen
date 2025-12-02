@@ -9,25 +9,6 @@ const getShark = document.getElementById("shark");
 const getStingRay = document.getElementById("stingray");
 const getTurtle = document.getElementById("turtle");
 
-// Opretter et lyd-objekt og tildeler source til den specifikke lydfil i mappen "sound"
-const soundCrab = new Audio();
-soundCrab.src = "sound/krabbe.wav";
-
-const soundNemo = new Audio();
-soundNemo.src = "sound/nemo.wav";
-
-const soundPuffer = new Audio();
-soundPuffer.src = "sound/pufferfisk.wav";
-
-const soundShark = new Audio();
-soundShark.src = "sound/hvidhaj.wav";
-
-const soundStingray = new Audio();
-soundStingray.src = "sound/rokke.wav";
-
-const soundTurtle = new Audio();
-soundTurtle.src = "sound/skilpadde.wav";
-
 //Dataobjekt med information om hver fisk
 const fishInfo = {
   crab: {
@@ -55,6 +36,25 @@ const fishInfo = {
     text: "Hej! Jeg er en skilpadde. Jeg er et roligt og venligt dyr, som for det meste lever i de varme have. Jeg har ikke specielt travlt i livet - jeg er nemlig ikke hurtig. Men hvis jeg endelig skal skynde mig, kan jeg faktisk svømme hurtigt. Jeg svømmer en hel del og bevæger mig mange kilometer med mine finner.",
   },
 };
+
+// Opretter et lyd-objekt og tildeler source til den specifikke lydfil i mappen "sound"
+const soundCrab = new Audio();
+soundCrab.src = "sound/krabbe.wav";
+
+const soundNemo = new Audio();
+soundNemo.src = "sound/nemo.wav";
+
+const soundPuffer = new Audio();
+soundPuffer.src = "sound/pufferfisk.wav";
+
+const soundShark = new Audio();
+soundShark.src = "sound/hvidhaj.wav";
+
+const soundStingray = new Audio();
+soundStingray.src = "sound/rokke.wav";
+
+const soundTurtle = new Audio();
+soundTurtle.src = "sound/skilpadde.wav";
 
 // Funktion: vis popup med HTML-indhold
 function showFishPopup(html) {
