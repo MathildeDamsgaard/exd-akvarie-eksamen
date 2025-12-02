@@ -396,8 +396,10 @@
 
 .popupContent .spilleknap {
   position: relative; /* Fjerner fixed-position for knappen i popup */
-  margin-top: 1.5rem; /* Justerer mellemrummet mellem knappen og teksten */
+  margin-top: 2rem; /* Justerer mellemrummet mellem knappen og teksten */
   display: inline-block; /* Gør elementet til et inline-niveaublokelement så margin-top virker*/
+  left: 50%; /* Afstand fra venstre side af boksen */
+  transform: translateX(-50%);
 }
 
 .closeBtn {
