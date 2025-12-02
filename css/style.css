@@ -367,6 +367,7 @@
 }
 
 .popupContent {
+  position: relative; /* Tilføjet så .closeBtn positioneres inde i boksen */
   background: #54abb8;
   color: #000;
   border: 4px solid #0c444c;
@@ -390,7 +391,7 @@
   border: none;
   border-radius: 37.46rem;
   cursor: pointer;
-  text-decoration: none; /* fjerner den understregede streg */
+  text-decoration: none; /* Fjerner den understregede streg */
 }
 
 .popupContent .spilleknap {
@@ -407,4 +408,10 @@
   background-color: #476288;
   border: none;
   cursor: pointer;
+}
+
+.popupContent .closeBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
