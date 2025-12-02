@@ -17,6 +17,21 @@ function playWinningSound() {
   showConfettiImage();
 }
 
+document.addEventListener("keydown", function (e) {
+  if (e.key === "ArrowLeft") {
+    moveDodgerLeft();
+  }
+  if (e.key === "ArrowRight") {
+    moveDodgerRight();
+  }
+  if (e.key === "ArrowUp") {
+    moveDodgerUp();
+  }
+  if (e.key === "ArrowDown") {
+    moveDodgerDown();
+  }
+});
+
 //Left dodger
 function moveDodgerLeft() {
   const leftNumbers = dodger.style.left.replace("px", "");
@@ -78,21 +93,6 @@ if (rightImg) {
   rightImg.addEventListener("touchstart", handleRight, { passive: false });
 }
 
-document.addEventListener("keydown", function (e) {
-  if (e.key === "ArrowLeft") {
-    moveDodgerLeft();
-  }
-  if (e.key === "ArrowRight") {
-    moveDodgerRight();
-  }
-  if (e.key === "ArrowUp") {
-    moveDodgerUp();
-  }
-  if (e.key === "ArrowDown") {
-    moveDodgerDown();
-  }
-});
-
 // Up dodger
 function moveDodgerUp() {
   const bottomNumbers = dodger.style.bottom.replace("px", "");
@@ -103,6 +103,23 @@ function moveDodgerUp() {
     //Gameover
     playGameoverSound();
   }
+}
+
+// Gør up-btn til "pil op"-knap
+const upImg =
+  document.getElementById("up-btn") || document.querySelector(".upbtn-img");
+if (upImg) {
+  const handleUp = (e) => {
+    e.preventDefault();
+    // Bevægelseslyd + rotering af billedet
+    movementSound.currentTime = 0;
+    movementSound.play();
+    dodger.style.transform = "rotate(270deg)";
+    moveDodgerUp();
+  };
+
+  upImg.addEventListener("click", handleUp);
+  upImg.addEventListener("touchstart", handleUp, { passive: false });
 }
 
 // Down dodger

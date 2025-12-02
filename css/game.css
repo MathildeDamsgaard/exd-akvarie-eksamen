@@ -129,3 +129,14 @@ body {
   cursor: pointer;
   transform: translateX(-50%); /* Centrerer horisontalt */
 }
+
+.upbtn-img {
+  position: fixed;
+  bottom: 16%; /* Låser den fast til bunden */
+  left: 50%;
+  width: 6%;
+  height: auto;
+  z-index: 10;
+  cursor: pointer;
+  transform: translateX(-50%); /* Centrerer horisontalt */
+}
