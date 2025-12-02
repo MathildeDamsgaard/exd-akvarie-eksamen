@@ -358,10 +358,9 @@
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #000;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
 }
 
 .popup.is-visible {

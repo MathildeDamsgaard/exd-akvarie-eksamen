@@ -2,6 +2,7 @@
   /* Farver */
   --color-water1: #1d5a77;
   --color-water2: #44b9f1;
+  --font-body3: "Nerko One";
 }
 
 #dodger {
@@ -62,12 +63,14 @@ body {
   color: #fff;
   background-color: #e01b24;
   border: none;
-  border-radius: 37.46rem;
+  border-radius: 45.6rem;
   cursor: pointer;
   text-decoration: none; /* Fjerner den understregede streg */
   position: fixed; /* Placerer den ift. selve skærmen*/
   bottom: 2%; /* Låser den fast til bunden */
   left: 2%; /* Låser den fast til venstre */
+  font-family: var(--font-body3);
+  letter-spacing: 2px;
 }
 
 /* ---------------------------------------------------------
