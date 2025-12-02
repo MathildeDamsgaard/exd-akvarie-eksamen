@@ -1,6 +1,7 @@
 :root {
   --font-body: "Irish Grover", system-ui;
   --font-body2: "Lato", sans-serif;
+  --font-body3: "Nerko One";
 
   /* Farver */
   --color-water1: #1d5a77;
@@ -360,6 +361,7 @@
   letter-spacing: 1px;
   color: #000;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .popup.is-visible {
@@ -385,11 +387,10 @@
   padding: 0.75rem 1.5rem;
   font-size: 1.1rem;
   font-weight: bold;
-  font-family: var(--font-body1); /*MANGLERMANGLERMANGLERMANGLERMANGLERMANGLER*/
   color: #fff;
   background-color: #e01b24;
   border: none;
-  border-radius: 37.46rem;
+  border-radius: 45.6rem;
   cursor: pointer;
   text-decoration: none; /* Fjerner den understregede streg */
 }
@@ -400,6 +401,9 @@
   display: inline-block; /* Gør elementet til et inline-niveaublokelement så margin-top virker*/
   left: 50%; /* Afstand fra venstre side af boksen */
   transform: translateX(-50%);
+  font-family: var(--font-body3);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .closeBtn {
