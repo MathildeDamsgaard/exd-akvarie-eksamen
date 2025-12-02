@@ -8,7 +8,6 @@ const getPufferFish = document.getElementById("pufferfish");
 const getShark = document.getElementById("shark");
 const getStingRay = document.getElementById("stingray");
 const getTurtle = document.getElementById("turtle");
-const getSeaweed = document.getElementById("seaweed");
 
 // Opretter et lyd-objekt og tildeler source til den specifikke lydfil i mappen "sound"
 const soundCrab = new Audio();
@@ -54,10 +53,6 @@ const fishInfo = {
   turtle: {
     title: "SKILPADDE",
     text: "Hej! Jeg er en skilpadde. Jeg er et roligt og venligt dyr, som for det meste lever i de varme have. Jeg har ikke specielt travlt i livet - jeg er nemlig ikke hurtig. Men hvis jeg endelig skal skynde mig, kan jeg faktisk svømme hurtigt. Jeg svømmer en hel del og bevæger mig mange kilometer med mine finner.",
-  },
-  seaweed: {
-    title: "TANG",
-    text: "“Hej! Jeg er tang. Jeg vokser i vandet og mange fisk bor ved mig. Jeg kan vokse hurtigt og jeg kan både være grøn, brun og rød. Mennesker kan spise mig! Måske har du smagt mig i sushi?”",
   },
 };
 
@@ -127,9 +122,6 @@ if (closeBtn) closeBtn.addEventListener("click", hideFishPopup);
         break;
       case "turtle":
         currentFishSound = new Audio("sound/skilpadde.wav");
-        break;
-      case "seaweed":
-        currentFishSound = new Audio("sound/tang.wav");
         break;
     }
     // Afspil lyd
