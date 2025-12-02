@@ -40,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 9;
   background: transparent;
 }
 .confetti-overlay img {
@@ -71,6 +71,7 @@ body {
   left: 2%; /* Låser den fast til venstre */
   font-family: var(--font-body3);
   letter-spacing: 2px;
+  z-index: 10; /* Sørger for at knappen ligger over konfetti */
 }
 
 /* ---------------------------------------------------------
