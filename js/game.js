@@ -30,11 +30,22 @@ function moveDodgerLeft() {
   }
 }
 
-document.addEventListener("keydown", function (e) {
-  if (e.key === "ArrowLeft") {
+// Gør left-btn til "pil venstre"-knap
+const leftImg =
+  document.getElementById("left-btn") || document.querySelector(".leftbtn-img");
+if (leftImg) {
+  const handleLeft = (e) => {
+    e.preventDefault();
+    // Bevægelseslyd + rotering af billedet
+    movementSound.currentTime = 0;
+    movementSound.play();
+    dodger.style.transform = "scaleX(-1)";
     moveDodgerLeft();
-  }
-});
+  };
+
+  leftImg.addEventListener("click", handleLeft);
+  leftImg.addEventListener("touchstart", handleLeft, { passive: false });
+}
 
 //Right dodger
 function moveDodgerRight() {
@@ -86,6 +97,23 @@ function moveDodgerDown() {
     //Gameover
     playGameoverSound();
   }
+}
+
+// Gør down-btn til "pil ned"-knap
+const downImg =
+  document.getElementById("down-btn") || document.querySelector(".downbtn-img");
+if (downImg) {
+  const handleDown = (e) => {
+    e.preventDefault();
+    // Bevægelseslyd + rotering af billedet
+    movementSound.currentTime = 0;
+    movementSound.play();
+    dodger.style.transform = "rotate(90deg)";
+    moveDodgerDown();
+  };
+
+  downImg.addEventListener("click", handleDown);
+  downImg.addEventListener("touchstart", handleDown, { passive: false });
 }
 
 /*Kollision*/
