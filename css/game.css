@@ -66,10 +66,8 @@ body {
   cursor: pointer;
   text-decoration: none; /* Fjerner den understregede streg */
   position: fixed; /* Placerer den ift. selve skærmen*/
-  bottom: 0.1%; /* Låser den fast til bunden */
+  bottom: 2%; /* Låser den fast til bunden */
   left: 2%; /* Låser den fast til venstre */
-  transform: translateX(-50%); /* Centrerer horisontalt */
-  transform: translateY(-50%); /* Centrerer vertikalt */
 }
 
 /* ---------------------------------------------------------
@@ -99,7 +97,7 @@ body {
 
 .leftbtn-img {
   position: fixed;
-  bottom: 3.6%; /* Låser den fast til bunden */
+  bottom: 2%; /* Låser den fast til bunden */
   left: 43%;
   width: 6%;
   height: auto;
@@ -110,7 +108,7 @@ body {
 
 .rightbtn-img {
   position: fixed;
-  bottom: 3.6%; /* Låser den fast til bunden */
+  bottom: 2%; /* Låser den fast til bunden */
   left: 57%;
   width: 6%;
   height: auto;
@@ -121,7 +119,7 @@ body {
 
 .upbtn-img {
   position: fixed;
-  bottom: 16%; /* Låser den fast til bunden */
+  bottom: 15%; /* Låser den fast til bunden */
   left: 50%;
   width: 6%;
   height: auto;
@@ -132,7 +130,7 @@ body {
 
 .downbtn-img {
   position: fixed;
-  bottom: 3.6%; /* Låser den fast til bunden */
+  bottom: 2%; /* Låser den fast til bunden */
   left: 50%;
   width: 6%;
   height: auto;
