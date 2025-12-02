@@ -108,17 +108,6 @@ body {
   transform: translateX(-50%); /* Centrerer horisontalt */
 }
 
-.downbtn-img {
-  position: fixed;
-  bottom: 3.6%; /* Låser den fast til bunden */
-  left: 50%;
-  width: 6%;
-  height: auto;
-  z-index: 10;
-  cursor: pointer;
-  transform: translateX(-50%); /* Centrerer horisontalt */
-}
-
 .rightbtn-img {
   position: fixed;
   bottom: 3.6%; /* Låser den fast til bunden */
@@ -133,6 +122,17 @@ body {
 .upbtn-img {
   position: fixed;
   bottom: 16%; /* Låser den fast til bunden */
+  left: 50%;
+  width: 6%;
+  height: auto;
+  z-index: 10;
+  cursor: pointer;
+  transform: translateX(-50%); /* Centrerer horisontalt */
+}
+
+.downbtn-img {
+  position: fixed;
+  bottom: 3.6%; /* Låser den fast til bunden */
   left: 50%;
   width: 6%;
   height: auto;
