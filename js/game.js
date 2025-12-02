@@ -60,6 +60,24 @@ function moveDodgerRight() {
   }
 }
 
+// Gør right-btn til "pil højre"-knap
+const rightImg =
+  document.getElementById("right-btn") ||
+  document.querySelector(".rightbtn-img");
+if (rightImg) {
+  const handleRight = (e) => {
+    e.preventDefault();
+    // Bevægelseslyd + rotering af billedet
+    movementSound.currentTime = 0;
+    movementSound.play();
+    dodger.style.transform = "rotate(0deg)";
+    moveDodgerRight();
+  };
+
+  rightImg.addEventListener("click", handleRight);
+  rightImg.addEventListener("touchstart", handleRight, { passive: false });
+}
+
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
     moveDodgerLeft();
