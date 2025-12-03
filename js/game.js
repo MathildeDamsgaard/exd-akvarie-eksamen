@@ -167,26 +167,6 @@ if (downImg) {
   downImg.addEventListener("touchstart", handleDown, { passive: false });
 }
 
-/*Kollision*/
-/*
-function checkCollision() {
-  const d = dodger.getBoundingClientRect();
-  const s = seaweed.getBoundingClientRect();
-  if (
-    d.right > s.left &&
-    d.left < s.right &&
-    d.bottom > s.top &&
-    d.top < s.bottom
-  ) {
-    // RAMT!
-    gameoverSound.play();
-  } else {
-    // Ikke ramt (kan være tom)
-    console.log("ingen kollision");
-  }
-}
-  */
-
 // Movement sound
 const movementSound = document.getElementById("movementSound");
 
@@ -208,3 +188,23 @@ document.addEventListener("keydown", function (e) {
     dodger.style.transform = "rotate(90deg)";
   }
 });
+
+/*Kollision*/
+/*
+function checkCollision() {
+  const d = dodger.getBoundingClientRect();
+  const s = seaweed.getBoundingClientRect();
+  if (
+    d.right > s.left &&
+    d.left < s.right &&
+    d.bottom > s.top &&
+    d.top < s.bottom
+  ) {
+    // RAMT!
+    gameoverSound.play();
+  } else {
+    // Ikke ramt (kan være tom)
+    console.log("ingen kollision");
+  }
+}
+  */

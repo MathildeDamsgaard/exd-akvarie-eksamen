@@ -15,15 +15,6 @@
   position: absolute;
 }
 
-/*Styling af tang*/
-#gameseaweed1 {
-  position: absolute;
-  bottom: -1%;
-  left: 25%;
-  transform: translateX(-50%);
-  height: 400px;
-}
-
 /* fjerner hvide kanter */
 html,
 body {
