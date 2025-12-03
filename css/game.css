@@ -45,14 +45,14 @@ body {
   transform: translateY(-8px) scale(1.02);
 }
 
-.spilleknap {
+.gamespilleknap {
   display: inline-block; /* Størrelse bestemmes af indhold */
   margin-top: 1.5rem;
   padding: 0.6rem 2.2rem;
   font-size: 2rem;
   font-weight: bold;
   color: #fff;
-  background-color: #e01b24;
+  background-color: #404040;
   border: none;
   border-radius: 45.6rem;
   cursor: pointer;
