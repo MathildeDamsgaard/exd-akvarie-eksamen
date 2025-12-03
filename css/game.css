@@ -19,7 +19,7 @@
 #gameseaweed1 {
   position: absolute;
   bottom: -1%;
-  left: 50%;
+  left: 25%;
   transform: translateX(-50%);
   height: 400px;
 }

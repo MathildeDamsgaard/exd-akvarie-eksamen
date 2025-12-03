@@ -12,6 +12,22 @@ function playGameoverSound() {
 // Winner sound
 const winningSound = document.getElementById("winningSound");
 
+// Vis et fuldt konfetti-billede som overlay
+function showConfettiImage() {
+  if (document.querySelector(".confetti-overlay")) return;
+
+  const overlay = document.createElement("div");
+  overlay.className = "confetti-overlay";
+
+  const img = document.createElement("img");
+  img.src = "img/confetti.png";
+  img.alt = "Confetti";
+
+  overlay.appendChild(img);
+
+  document.body.appendChild(overlay);
+}
+
 function playWinningSound() {
   winningSound.play();
   showConfettiImage();
@@ -192,23 +208,3 @@ document.addEventListener("keydown", function (e) {
     dodger.style.transform = "rotate(90deg)";
   }
 });
-
-function playSoundOnMovement() {
-  movementSound.currentTime = 0;
-}
-
-// Vis et fuldt konfetti-billede som overlay
-function showConfettiImage() {
-  if (document.querySelector(".confetti-overlay")) return;
-
-  const overlay = document.createElement("div");
-  overlay.className = "confetti-overlay";
-
-  const img = document.createElement("img");
-  img.src = "img/confetti.png";
-  img.alt = "Confetti";
-
-  overlay.appendChild(img);
-
-  document.body.appendChild(overlay);
-}
