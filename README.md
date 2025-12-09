@@ -15,7 +15,7 @@
 
 ## style.css
 
-- Stylet <p>Tryk på en fisk!</p> så den er mere fængende i designet og tilføjet keyframes "scale" så den transfomerer
+- Stylet `<p>Tryk på en fisk!</p>` så den er mere fængende i designet og tilføjet keyframes "scale" så den transfomerer
 - Fjernet baggrundsbilledet og i stedet tilføjet i htm, da det på denne måde kan opføre sig som et normalt responsivt billede uden at blive beskåret af CSS
 - Brugt relative størrelser i stedet for faste enheder ved fiskene, da de på denne måde bliver responsive
 - Indsat bobler og lavet keyframes til dem
@@ -35,3 +35,4 @@
 ## game.js
 
 - Fået knapperne fra game.index til at virke når man klikker på dem
+
