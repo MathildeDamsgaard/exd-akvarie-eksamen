@@ -3,7 +3,7 @@
 ## index.html
 
 - Indsat favicon
-- Indsat baggrundsbillede `<img src="img/bg.svg" class="bg-img" alt="baggrund" />` i html, frem for i css, da det på denne måde kan opføre sig som et normalt responsivt billede uden at blive beskåret af CSS
+- Indsat baggrundsbillede i html, frem for i css, da det på denne måde kan opføre sig som et normalt responsivt billede uden at blive beskåret af CSS
 - Udskiftet fiskene fra PNG til GIF's med nyt design
 - Indsat bobler
 
