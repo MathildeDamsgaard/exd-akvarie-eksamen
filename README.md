@@ -1,14 +1,37 @@
-# Fælles
-Vi tilsluttede Mathildes skærm til TV’et og begyndte i fællesskab at kode vores akvarie/startskærm. Som reference anvendte vi opgaven "JS Road Show Animations With CSS and Data", som hjalp os i gang med strukturen og animationerne.
+# Optimeringer
 
-# Mathilde
-Mathilde har haft ansvaret for at få fiskene til at bevæge sig. Hun har desuden stået for udviklingen af vores spil med udgangspunkt i opgaven "PacMan". Derudover har hun sørget for, at lyden stopper på fiskene, når pop-up’en lukkes.
+## index.html
 
-# Mikkeline
-Mikkeline har haft ansvaret for baggrundsgradienten og lyden på fiskene. Hun har også lavet Home-knappen i vores "game" og kodet info-pop-up-cards på fiskene inkl. knapper. Derudover har hun tilføjet konfetti på skærmen, når spillet vindes. 
+- Indsat favicon
+- Indsat baggrundsbillede i html, frem for i css, da det på denne måde kan opføre sig som et normalt responsivt billede uden at blive beskåret af CSS
+- Udskiftet fiskene fra PNG til GIF's med nyt design
+- Indsat bobler
 
-# Yulia
-Yulia har haft ansvaret for overskriften på startskærmen og 'cursor pointer' property i CSS.
+## game.html
 
-# Cecilie
-Cecilie har haft ansvaret for baggrundsbilledet og info pop-up bokse.
+- Indsat favicon
+- Indsat link til fonts
+- Indsat en div med klassen "scene", hvor jeg har sat et baggrundsbillede ind og billeder som fungerer som knapper
+
+## style.css
+
+- Stylet <p>Tryk på en fisk!</p> så den er mere fængende i designet og tilføjet keyframes "scale" så den transfomerer
+- Fjernet baggrundsbilledet og i stedet tilføjet i htm, da det på denne måde kan opføre sig som et normalt responsivt billede uden at blive beskåret af CSS
+- Brugt relative størrelser i stedet for faste enheder ved fiskene, da de på denne måde bliver responsive
+- Indsat bobler og lavet keyframes til dem
+- Ændret design på popupContent
+- Forbedret placering af closeBtn og spilleknap
+
+## game.css
+
+- Tilføjet "tilbage" knap
+- Stylet baggrundsbilledet fra game.index til at være responsivt
+- Stylet knapperne fra game.index
+
+## index.js
+
+- Fjernet popupContent for tang
+
+## game.js
+
+- Fået knapperne fra game.index til at virke når man klikker på dem
